@@ -5,6 +5,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: monospace;
+  background-position: center;
 }
 
 .container {
@@ -157,6 +158,17 @@ b {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-image: url(asset/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    background-position: center;
+    width: 100%;
+  }
+
   .container {
     justify-content: center;
     align-items: center;
