@@ -4,6 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Chill</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form action="/login" method="post">
+        <div class="header">
+          <img src="asset/logologin.png" alt="logo" class="logo" />
+          <h1 class="title">CHILL</h1>
+        </div>
+        <div class="welcome">
+          <h3>Masuk</h3>
+          <h5>Selamat datang kembali!</h5>
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <br />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Masukkan username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Kata Sandi</label>
+          <br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Masukkan kata sandi"
+          />
+          <div class="pilihandaftar">Belum punya akun? Daftar</div>
+          <div class="forgotpassword">Lupa kata sandi?</div>
+        </div>
+        <button type="submit">Masuk</button>
+        <br />
+        <div class="choiceslogin">Atau</div>
+        <button type="submit">Masuk dengan Google</button>
+      </form>
+    </div>
+  </body>
 </html>

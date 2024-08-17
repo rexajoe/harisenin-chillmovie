@@ -1,2 +1,42 @@
 body {
+  background-image: url(asset/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 663px; /*nanti diganti max-heigh kalo udah diisi konten*/
+  width: 529px;
+  background-color: aqua;
+  border-radius: 16px;
+  padding: 40px;
+  gap: 37px;
+  margin: 181px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 44px;
+  max-width: 163px;
+}
+
+.logo {
+  width: 42.56px;
+  height: 36.34px;
+  margin-right: 4px;
+  color: #ffffff;
+}
+
+.title {
+  margin: 0;
+  font-family: londrina Solid;
+  font-weight: 400;
+  color: #ffffff;
 }
