@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Chill</title>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="daftar.css" />
     <link
       href="https://fonts.google.com/share?selection.family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900|Londrina+Solid:wght@100;300;400;900|Matemasie"
     />
@@ -13,7 +13,7 @@
     <div class="container">
       <div class="header">
         <img
-          src="asset/logologin.png"
+          src="assetDaftar/logodaftar.png"
           alt="logo"
           class="logo"
           loading="lazy"
@@ -46,16 +46,33 @@
           placeholder="Masukkan kata sandi"
         />
         <img
-          src="asset/eye.png"
+          src="assetDaftar/eyeDaftar.png"
           alt="eye"
           class="eye-icon"
           loading="lazy"
           height="18.33px"
           width="18.33px"
         />
-        <div class="gakbisalogin">
-          <p1>Belum punya akun? <b>Daftar</b></p1>
-          <p2><b>Lupa kata sandi?</b></p2>
+      </div>
+      <div class="password-container2">
+        <label for="password" class="nama-label">Konfirmasi Kata Sandi</label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Masukkan kata sandi"
+        />
+        <img
+          src="assetDaftar/eyeDaftar.png"
+          alt="eye"
+          class="eye-icon"
+          loading="lazy"
+          height="18.33px"
+          width="18.33px"
+        />
+        <div class="sudahpunyaakun">
+          <p1>Sudah punya akun? <b>Masuk</b></p1>
         </div>
       </div>
       <button type="submit" class="masuk">Masuk</button>
@@ -64,7 +81,7 @@
       <div class="login-google">
         <button type="submit" class="masuk">Masuk dengan Google</button>
         <img
-          src="asset/google-logo.png"
+          src="assetDaftar/google-logoDaftar.png"
           alt="google"
           class="google"
           loading="lazy"

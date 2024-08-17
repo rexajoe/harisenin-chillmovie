@@ -1,5 +1,5 @@
 body {
-  background-image: url(asset/background.jpeg);
+  background-image: url(assetDaftar/backgroundDaftar.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -11,7 +11,7 @@ body {
 .container {
   justify-content: center;
   align-items: center;
-  max-height: 583px;
+  height: 698px;
   width: 449px;
   border-radius: 16px;
   padding: 40px;
@@ -93,6 +93,10 @@ input {
   position: relative;
 }
 
+.password-container2 {
+  position: relative;
+}
+
 .eye-icon {
   position: absolute;
   width: 18.33px;
@@ -103,7 +107,7 @@ input {
   transform: translateY(-70%);
 }
 
-.gakbisalogin {
+.sudahpunyakun {
   display: flex;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -159,7 +163,7 @@ b {
 
 @media (max-width: 768px) {
   body {
-    background-image: url(asset/background.jpeg);
+    background-image: url(assetDaftar/backgroundDaftar.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
