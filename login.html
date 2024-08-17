@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Chill</title>
     <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.google.com/share?selection.family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900|Londrina+Solid:wght@100;300;400;900|Matemasie"
+    />
   </head>
   <body>
     <div class="container">
@@ -18,7 +21,7 @@
           <h5>Selamat datang kembali!</h5>
         </div>
         <div class="form-group">
-          <label for="username">Username</label>
+          <label for="username" class="nama-label">Username</label>
           <br />
           <input
             type="text"
@@ -27,8 +30,8 @@
             placeholder="Masukkan username"
           />
         </div>
-        <div class="form-group">
-          <label for="password">Kata Sandi</label>
+        <div class="password-container">
+          <label for="password" class="nama-label">Kata Sandi</label>
           <br />
           <input
             type="password"
@@ -36,13 +39,19 @@
             name="password"
             placeholder="Masukkan kata sandi"
           />
-          <div class="pilihandaftar">Belum punya akun? Daftar</div>
-          <div class="forgotpassword">Lupa kata sandi?</div>
+          <img src="asset/eye.png" alt="eye" class="eye-icon" />
+          <div class="gakbisalogin">
+            <p1>Belum punya akun? <b>Daftar</b></p1>
+            <p2><b>Lupa kata sandi?</b></p2>
+          </div>
         </div>
-        <button type="submit">Masuk</button>
+        <button type="submit" class="masuk">Masuk</button>
         <br />
         <div class="choiceslogin">Atau</div>
-        <button type="submit">Masuk dengan Google</button>
+        <div class="login-google">
+          <button type="submit" class="masuk">Masuk dengan Google</button>
+          <img src="asset/google-logo.png" alt="google" class="google" />
+        </div>
       </form>
     </div>
   </body>
