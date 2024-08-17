@@ -112,6 +112,10 @@ p1 {
   margin-right: 130px;
 }
 
+b {
+  cursor: pointer;
+}
+
 .masuk {
   width: 100%;
   height: 50px;
