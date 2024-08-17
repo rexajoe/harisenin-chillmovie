@@ -10,9 +10,8 @@ body {
 .container {
   justify-content: center;
   align-items: center;
-  height: 583px; /*nanti diganti max-heigh kalo udah diisi konten*/
+  max-height: 583px;
   width: 449px;
-  background-color: aqua;
   border-radius: 16px;
   padding: 40px;
   gap: 37px;
@@ -24,9 +23,12 @@ body {
 .header {
   display: flex;
   align-items: center;
+  top: 0;
+  left: 50%;
   margin-bottom: 20px;
   height: 44px;
   max-width: 163px;
+  margin-left: 130px;
 }
 
 .logo {
@@ -36,9 +38,8 @@ body {
 }
 
 .title {
-  margin: 0;
   font-size: 50px;
-  font-family: Londrina Solid;
+  font-family: monospace;
   font-weight: 400;
 }
 
@@ -131,6 +132,7 @@ p1 {
 
 .masuk:hover {
   background-color: #e7e3fc3b;
+  cursor: pointer;
 }
 
 .choiceslogin {
@@ -147,6 +149,5 @@ p1 {
   height: 18.33px;
   top: 50%;
   left: 25%;
-  cursor: pointer;
   transform: translateY(-50%);
 }
