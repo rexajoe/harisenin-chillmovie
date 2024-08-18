@@ -172,8 +172,8 @@ b {
   .container {
     justify-content: center;
     align-items: center;
-    height: 364px;
-    width: 282px;
+    height: 340px;
+    width: 258px;
     border-radius: 8px;
     padding: 24px;
     gap: 20px;
@@ -228,7 +228,7 @@ b {
   }
 
   input {
-    width: 260px;
+    width: 235px;
     height: 28px;
     border: 1px solid #e7e3fc3b;
     border-radius: 24px;
@@ -240,7 +240,7 @@ b {
     text-align: left;
     padding-left: 20px;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 9.24px;
   }
 
@@ -273,7 +273,7 @@ b {
   }
 
   p1 {
-    margin-right: 40px;
+    margin-right: 17px;
     font-size: 10px;
   }
 
@@ -295,8 +295,8 @@ b {
 
   .masuk {
     font-family: monospace;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: transparent;
   }
 
