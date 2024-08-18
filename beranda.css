@@ -22,7 +22,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  max-height: 94px;
+  max-height: 120px;
   width: 1440px;
   padding-left: 50px;
   padding-right: 50px;
@@ -69,13 +69,13 @@ nav ul {
   position: absolute;
   background-color: #ffffff;
   display: none;
-  width: 130px;
+  width: 160px;
+  height: 200px;
   background-color: #181a1c;
   padding: 10px;
   text-align: left;
-
   margin-right: 100px;
-  top: 100%;
+  top: 85%;
   right: -50px;
 }
 
@@ -85,6 +85,12 @@ nav ul {
   padding: 5px;
 }
 
+.icon-dropdown {
+  filter: invert(1);
+  padding: 5px;
+  vertical-align: middle;
+}
+
 .dropdown > li {
   padding: 5px;
 }
@@ -92,6 +98,11 @@ nav ul {
 .dropdown > li > a:hover {
   color: blue;
   cursor: pointer;
+}
+
+.dropdown > li > a:hover .icon-dropdown {
+  filter: invert(23%) sepia(98%) saturate(10000%) hue-rotate(210deg)
+    brightness(100%) contrast(500%);
 }
 
 ul li:hover .dropdown {
