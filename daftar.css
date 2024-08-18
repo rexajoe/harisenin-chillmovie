@@ -78,7 +78,7 @@ input {
   font-family: monospace;
   text-align: left;
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 10px;
 }
 
@@ -87,7 +87,7 @@ input {
   text-align: left;
   padding-left: 20px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 #password2 {
@@ -106,7 +106,17 @@ input {
   position: relative;
 }
 
-.eye-icon {
+.eye-icon1 {
+  position: absolute;
+  width: 18.33px;
+  height: 18.33px;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+  transform: translateY(-80%);
+}
+
+.eye-icon2 {
   position: absolute;
   width: 18.33px;
   height: 18.33px;
@@ -199,8 +209,8 @@ b {
   .container {
     justify-content: center;
     align-items: center;
-    height: 364px;
-    width: 282px;
+    max-height: 404.28px;
+    width: 258px;
     border-radius: 8px;
     padding: 24px;
     gap: 20px;
@@ -217,7 +227,7 @@ b {
     margin-bottom: 25px;
     height: 20px;
     max-width: 163px;
-    margin-left: 100px;
+    margin-left: 70px;
   }
 
   .logo {
@@ -255,7 +265,7 @@ b {
   }
 
   input {
-    width: 260px;
+    width: 240px;
     height: 28px;
     border: 1px solid #e7e3fc3b;
     border-radius: 24px;
@@ -265,17 +275,27 @@ b {
   #username {
     font-family: monospace;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 15px;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 9.24px;
   }
 
   #password {
     font-family: monospace;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 15px;
     margin-top: 5px;
+    font-size: 9.24px;
+    margin-bottom: 10px;
+  }
+
+  #password2 {
+    font-family: monospace;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     font-size: 9.24px;
   }
 
@@ -283,14 +303,24 @@ b {
     position: relative;
   }
 
-  .eye-icon {
+  .eye-icon1 {
     position: absolute;
     width: 11px;
     height: 9.5px;
     top: 50%;
     right: 15px;
     cursor: pointer;
-    transform: translateY(-50%);
+    transform: translateY(-0%);
+  }
+
+  .eye-icon2 {
+    position: absolute;
+    width: 11px;
+    height: 9.5px;
+    top: 50%;
+    right: 15px;
+    cursor: pointer;
+    transform: translateY(-70%);
   }
 
   .gakbisalogin {
@@ -308,23 +338,38 @@ b {
     font-size: 10px;
   }
 
-  .masuk {
+  .daftar1 {
     width: 100%;
-    max-height: 30.17px;
+    height: 30.17px;
     padding: 8px;
     border: 1px solid;
-    border-radius: 13.86px;
+    border-radius: 24px;
     border: 1px solid #e7e3fc3b;
     font-family: "Lato";
     color: #ffffff;
-    font-size: 10px;
-  }
-
-  .masuk {
     font-family: monospace;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: transparent;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  .daftar2 {
+    width: 100%;
+    height: 30.17px;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 24px;
+    border: 1px solid #e7e3fc3b;
+    font-family: "Lato";
+    color: #ffffff;
+    font-family: monospace;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 10px;
   }
 
   .masuk:hover {
@@ -346,7 +391,7 @@ b {
     width: 10px;
     height: 10px;
     top: 50%;
-    left: 22%;
+    left: 20%;
     transform: translateY(-50%);
   }
 }
