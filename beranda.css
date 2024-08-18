@@ -1,0 +1,59 @@
+@import url(https://fonts.google.com/share?selection.family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900|Londrina+Solid:wght@100;300;400;900|Matemasie);
+body {
+  background-color: #181a1c;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  background-color: grey;
+  max-height: 94px;
+  width: 1440px;
+}
+
+nav ul {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-height: 94px;
+  width: 1440px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.logo-nama {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.nav-kiri {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 55%;
+}
+
+.nav-kiri > li {
+  margin-right: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-kanan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+}
