@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Matemasie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Matemasie&display=swap");
+
 body {
   background-image: url(assetDaftar/backgroundDaftar.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  font-family: monospace;
+  font-family: Lato;
   background-position: center;
 }
 
@@ -26,10 +29,10 @@ body {
   align-items: center;
   top: 0;
   left: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   height: 44px;
   max-width: 163px;
-  margin-left: 130px;
+  margin-left: 30%;
 }
 
 .logo {
@@ -40,13 +43,13 @@ body {
 
 .title {
   font-size: 50px;
-  font-family: monospace;
+  font-family: Londrina Solid;
   font-weight: 400;
 }
 
 .welcome {
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   display: block;
   text-align: center;
 }
@@ -75,7 +78,7 @@ input {
 }
 
 #username {
-  font-family: monospace;
+  font-family: Lato;
   text-align: left;
   padding-left: 20px;
   margin-bottom: 40px;
@@ -83,7 +86,7 @@ input {
 }
 
 #password {
-  font-family: monospace;
+  font-family: Lato;
   text-align: left;
   padding-left: 20px;
   margin-top: 10px;
@@ -91,7 +94,7 @@ input {
 }
 
 #password2 {
-  font-family: monospace;
+  font-family: Lato;
   text-align: left;
   padding-left: 20px;
   margin-top: 10px;
@@ -147,9 +150,8 @@ b {
   border: 1px solid;
   border-radius: 24px;
   border: 1px solid #e7e3fc3b;
-  font-family: "Lato";
+  font-family: Lato;
   color: #ffffff;
-  font-family: monospace;
   margin-top: 40px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -165,7 +167,7 @@ b {
   border: 1px solid #e7e3fc3b;
   font-family: "Lato";
   color: #ffffff;
-  font-family: monospace;
+  font-family: Lato;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -201,7 +203,7 @@ b {
     background-size: cover;
     display: flex;
     justify-content: center;
-    font-family: monospace;
+    font-family: Lato;
     background-position: center;
     width: 100%;
   }
@@ -224,10 +226,10 @@ b {
     align-items: center;
     top: 0;
     left: 50%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     height: 20px;
     max-width: 163px;
-    margin-left: 70px;
+    margin-left: 30%;
   }
 
   .logo {
@@ -238,13 +240,13 @@ b {
 
   .title {
     font-size: 28.88px;
-    font-family: monospace;
+    font-family: Londrina Solid;
     font-weight: 400;
   }
 
   .welcome {
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     display: block;
     text-align: center;
   }
@@ -273,7 +275,7 @@ b {
   }
 
   #username {
-    font-family: monospace;
+    font-family: Lato;
     text-align: left;
     padding-left: 15px;
     margin-top: 5px;
@@ -282,7 +284,7 @@ b {
   }
 
   #password {
-    font-family: monospace;
+    font-family: Lato;
     text-align: left;
     padding-left: 15px;
     margin-top: 5px;
@@ -291,7 +293,7 @@ b {
   }
 
   #password2 {
-    font-family: monospace;
+    font-family: Lato;
     text-align: left;
     padding-left: 15px;
     margin-top: 5px;
@@ -345,9 +347,8 @@ b {
     border: 1px solid;
     border-radius: 24px;
     border: 1px solid #e7e3fc3b;
-    font-family: "Lato";
+    font-family: Lato;
     color: #ffffff;
-    font-family: monospace;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: transparent;
@@ -362,9 +363,8 @@ b {
     border: 1px solid;
     border-radius: 24px;
     border: 1px solid #e7e3fc3b;
-    font-family: "Lato";
     color: #ffffff;
-    font-family: monospace;
+    font-family: Lato;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: transparent;
