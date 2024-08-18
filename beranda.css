@@ -6,6 +6,7 @@ body {
   justify-content: center;
   display: flex;
   margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -25,6 +26,7 @@ nav ul {
   width: 1440px;
   padding-left: 50px;
   padding-right: 50px;
+  position: relative;
 }
 
 .logo-nama {
@@ -48,6 +50,11 @@ nav ul {
   cursor: pointer;
 }
 
+.nav-kiri > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .nav-kanan {
   display: flex;
   flex-direction: row;
@@ -56,4 +63,41 @@ nav ul {
 
 .avatar {
   border-radius: 50%;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #ffffff;
+  display: none;
+  width: 130px;
+  background-color: #181a1c;
+  padding: 10px;
+  text-align: left;
+
+  margin-right: 100px;
+  top: 100%;
+  right: -50px;
+}
+
+.dropdown > li > a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.dropdown > li {
+  padding: 5px;
+}
+
+.dropdown > li > a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+ul li:hover .dropdown {
+  display: block;
+}
+
+.arrowdown {
+  padding: 10px;
 }
