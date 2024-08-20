@@ -6,13 +6,14 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
 nav {
   display: flex;
-  background-color: grey;
+  background-color: #181a1c;
   max-height: 94px;
   width: 1440px;
 }
@@ -79,6 +80,7 @@ nav ul {
   margin-right: 100px;
   top: 85%;
   right: -50px;
+  z-index: 1;
 }
 
 .dropdown > li > a {
@@ -114,4 +116,120 @@ ul li:hover .dropdown {
 
 .arrowdown {
   padding: 10px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+}
+
+.paragraf {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 100px;
+  padding-bottom: 160px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 10), transparent);
+}
+
+.button-play {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 100px;
+}
+
+h2 {
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52.8px;
+}
+
+p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+}
+
+.paragraf h2,
+.overlay p {
+  margin: 0;
+}
+
+.button-play {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-play-left {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+#mulai {
+  padding: 10px;
+  background: #000dff;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  width: 93px;
+  height: 42px;
+  border: none;
+  cursor: pointer;
+}
+
+.selengkapnya {
+  padding: 10px;
+  background: #22282a;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  width: 185px;
+  height: 45px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.selengkapnya i {
+  margin-right: 10px;
+}
+
+#lapanbelas-plus {
+  border-radius: 40px;
+  width: 52px;
+  height: 45px;
+  font-family: Lato;
+  font-size: 18px;
+  color: #c1c2c4;
+  border: 1px solid #c1c2c4;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#mute {
+  width: 44px;
+  height: 44px;
+  border-radius: 40px;
+  font-family: Lato;
+  font-size: 18px;
+  color: #c1c2c4;
+  border: 1px solid #c1c2c4;
+  background-color: transparent;
+  cursor: pointer;
 }
