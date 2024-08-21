@@ -8,8 +8,6 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 }
 
 nav {
@@ -500,6 +498,9 @@ footer {
 
 .footer-section h3 {
   margin-bottom: 10px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .genre-list {
@@ -507,6 +508,9 @@ footer {
   padding: 0;
   margin: 0;
   columns: 4;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .help-list {
@@ -514,6 +518,9 @@ footer {
   padding: 0;
   margin: 0;
   columns: 1;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .genre-list li,
@@ -527,45 +534,515 @@ footer {
 
 /* Responsif untuk device kecil */
 @media (max-width: 768px) {
-  .footer-container {
+  nav {
     display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 20px 10px;
+    background-color: #181a1c;
+    max-height: 56px;
+    width: 360px;
+    display: flex;
+  }
+
+  nav ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    max-height: 56px;
+    width: 360px;
+    position: relative;
+  }
+
+  .logo-nama {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-nama {
+    display: none;
+  }
+
+  .nav-kiri {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-right: 45%;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .nav-kiri > li {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .nav-kiri > li > a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .nav-kanan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .avatar {
+    border-radius: 50%;
+  }
+
+  .dropdown {
+    position: absolute;
+    background-color: #ffffff;
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-color: #181a1c;
+    padding: 10px;
+    text-align: left;
+    top: 85%;
+    right: -50px;
+    z-index: 1;
+  }
+
+  .dropdown > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    font-family: Lato;
+  }
+
+  .icon-dropdown {
+    filter: invert(1);
+    padding: 5px;
+    vertical-align: middle;
+  }
+
+  .dropdown > li {
+    padding: 5px;
+  }
+
+  .dropdown > li > a:hover {
+    color: blue;
+    cursor: pointer;
+  }
+
+  .dropdown > li > a:hover .icon-dropdown {
+    filter: invert(23%) sepia(98%) saturate(10000%) hue-rotate(210deg)
+      brightness(100%) contrast(500%);
+  }
+
+  ul li:hover .dropdown {
+    display: block;
+  }
+
+  .arrowdown {
+    padding: 10px;
+  }
+
+  /*Bagian Container 1*/
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container img {
+    display: block;
+  }
+
+  .paragraf {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 100px;
+    padding-bottom: 160px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 10), transparent);
+  }
+
+  .button-play {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 100px;
+  }
+
+  h2 {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+  }
+
+  p {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+  }
+
+  .paragraf h2,
+  .overlay p {
+    margin: 0;
+  }
+
+  .button-play {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-play-left {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+
+  #mulai {
+    padding: 10px;
+    background: #000dff;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    width: 93px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .selengkapnya {
+    padding: 10px;
+    background: #22282a;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    width: 185px;
+    height: 45px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .selengkapnya i {
+    margin-right: 10px;
+  }
+
+  #lapanbelas-plus {
+    border-radius: 40px;
+    width: 52px;
+    height: 45px;
+    font-family: Lato;
+    font-size: 18px;
+    color: #c1c2c4;
+    border: 1px solid #c1c2c4;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  #mute {
+    width: 44px;
+    height: 44px;
+    border-radius: 40px;
+    font-family: Lato;
+    font-size: 18px;
+    color: #c1c2c4;
+    border: 1px solid #c1c2c4;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  /*Bagian container 2*/
+
+  .lanjut-nonton {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .lanjut-nonton h2 {
+    font-size: 32px;
+    font-family: Lato;
+    font-weight: 700;
+    margin-left: 4.7%;
+    margin-bottom: 0;
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+  }
+
+  .card {
+    position: relative;
+    min-width: 302px;
+    height: 162px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card .movie-title {
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 700;
+  }
+
+  .card .rating {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-family: Lato;
+    font-weight: 400;
+  }
+
+  .card .chip {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #0f1e93;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: lato;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(15%);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    background: #2f3334;
+    padding-block: 7px;
+    padding-inline: 10px;
+    border-radius: 25px;
+    border: 1px solid #e7e3fc3b;
+  }
+
+  .arrow-left {
+    left: 3%;
+  }
+
+  .arrow-right {
+    right: 3%;
+  }
+
+  /*Bagian container 3 4 5*/
+
+  .toprating-trending-rilis {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .toprating-trending-rilis h2 {
+    font-size: 32px;
+    font-family: Lato;
+    font-weight: 700;
+    margin-left: 4.7%;
+    margin-bottom: 0;
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+  }
+
+  .card-wrapper-last {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    overflow-x: auto;
+    padding: 20px 0;
+    padding-bottom: 100px;
+    scroll-behavior: smooth;
+  }
+
+  .card-dua {
+    position: relative;
+    min-width: 234px;
+    height: 365px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .card-dua .chip {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #0f1e93;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: lato;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(15%);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    background: #2f3334;
+    padding-block: 7px;
+    padding-inline: 10px;
+    border-radius: 25px;
+    border: 1px solid #e7e3fc3b;
+  }
+
+  .arrow-left {
+    left: 3%;
+  }
+
+  .arrow-right {
+    right: 3%;
+  }
+
+  /*Chip Top 10*/
+
+  .card-dua .chip-top-ten {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    background: #b71f1d;
+    color: white;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Lato;
+    text-align: center;
+  }
+
+  /*Footer*/
+  footer {
+    background-color: #181a1c;
+    width: 1440px;
+    height: 284px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin-left: 50%;
+    margin-right: 50%;
+    border-top: #c1c2c4 1px solid;
+    color: #c1c2c4;
   }
 
   .footer-left {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-  }
-
-  .brand-logo {
-    width: 40px;
-  }
-
-  .brand-name p {
-    margin-left: 10px;
-  }
-
-  .footer-center,
-  .footer-right {
-    display: none;
-  }
-
-  .footer-small-view {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 20px;
+    max-width: 300px;
+    justify-content: flex-start;
+    margin-right: 10px;
   }
 
-  .footer-small-view h3 {
+  .footer-logo-brand h2 {
+    font-weight: 400;
+    font-size: 50px;
+    font-family: Londrina Solid;
+    color: #ffffff;
     margin: 0;
   }
 
-  .footer-small-view .arrow-right {
-    font-size: 24px;
+  #copyright {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .footer-logo-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .brand-logo {
+    width: 42.56px;
+    height: 36.34px;
+  }
+
+  .footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+
+  .genre-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 4;
+  }
+
+  .help-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 1;
+  }
+
+  .genre-list li,
+  .help-list li {
+    margin-bottom: 15px;
+  }
+
+  .footer-small-view {
+    display: none;
   }
 }
