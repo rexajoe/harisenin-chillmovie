@@ -312,7 +312,7 @@ b {
     top: 50%;
     right: 15px;
     cursor: pointer;
-    transform: translateY(-0%);
+    transform: translateY(30%);
   }
 
   .eye-icon2 {
