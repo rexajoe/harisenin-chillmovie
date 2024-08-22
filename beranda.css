@@ -11,6 +11,7 @@ body {
 }
 
 nav {
+  position: relative;
   display: flex;
   background-color: #181a1c;
   max-height: 94px;
@@ -557,7 +558,7 @@ footer {
     align-items: center;
     display: flex;
     list-style: none;
-    max-height: 56px;
+    max-height: auto;
     width: 360px;
     position: relative;
   }
@@ -608,16 +609,14 @@ footer {
 
   .dropdown {
     position: absolute;
-    background-color: #ffffff;
     display: block;
     width: 150px;
-    height: 150px;
-    background-color: blue;
+    height: 200px;
     padding: 1px;
     text-align: left;
-    top: 85%;
+    top: 100%;
     right: -50px;
-    z-index: 1;
+    z-index: 999;
   }
 
   .dropdown > li > a {
@@ -661,10 +660,14 @@ footer {
   .image-container {
     position: relative;
     display: inline-block;
+    width: 500px;
+    height: 225px;
   }
 
   .image-container img {
     display: block;
+    width: 500px;
+    height: 225px;
   }
 
   .paragraf {
@@ -672,9 +675,13 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 100px;
-    padding-bottom: 160px;
+    padding: 10px;
+    padding-bottom: 40px;
     background: linear-gradient(to top, rgba(0, 0, 0, 10), transparent);
+    width: 500px;
+    height: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .button-play {
@@ -682,21 +689,21 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 100px;
+    padding: 5px;
   }
 
   h2 {
     font-family: Lato;
-    font-size: 48px;
+    font-size: 12px;
     font-weight: 700;
-    line-height: 52.8px;
+    line-height: 16.8px;
   }
 
   p {
     font-family: Lato;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 25.2px;
+    line-height: 16.8px;
   }
 
   .paragraf h2,
@@ -707,24 +714,26 @@ footer {
   .button-play {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   .button-play-left {
     display: flex;
     justify-content: space-around;
     gap: 8px;
+    margin-right: 50px;
   }
 
   #mulai {
     padding: 10px;
     background: #000dff;
-    border-radius: 50px;
+    border-radius: 10px;
     color: #ffffff;
     font-family: Lato;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: 700;
-    width: 93px;
-    height: 42px;
+    width: 55px;
+    height: 25px;
     border: none;
     cursor: pointer;
   }
@@ -735,10 +744,10 @@ footer {
     border-radius: 50px;
     color: #ffffff;
     font-family: Lato;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: 700;
-    width: 185px;
-    height: 45px;
+    width: 120px;
+    height: 25px;
     border: none;
     display: flex;
     align-items: center;
@@ -751,11 +760,11 @@ footer {
   }
 
   #lapanbelas-plus {
-    border-radius: 40px;
-    width: 52px;
-    height: 45px;
+    border-radius: 20px;
+    width: 30px;
+    height: 25px;
     font-family: Lato;
-    font-size: 18px;
+    font-size: 12px;
     color: #c1c2c4;
     border: 1px solid #c1c2c4;
     background-color: transparent;
@@ -763,11 +772,11 @@ footer {
   }
 
   #mute {
-    width: 44px;
-    height: 44px;
-    border-radius: 40px;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
     font-family: Lato;
-    font-size: 18px;
+    font-size: 12px;
     color: #c1c2c4;
     border: 1px solid #c1c2c4;
     background-color: transparent;
@@ -783,7 +792,7 @@ footer {
   }
 
   .lanjut-nonton h2 {
-    font-size: 32px;
+    font-size: 20px;
     font-family: Lato;
     font-weight: 700;
     margin-left: 4.7%;
@@ -801,8 +810,8 @@ footer {
 
   .card {
     position: relative;
-    min-width: 302px;
-    height: 162px;
+    min-width: 309px;
+    height: 151px;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -823,13 +832,13 @@ footer {
   }
 
   .card .movie-title {
-    font-size: 18px;
+    font-size: 12px;
     font-family: Lato;
     font-weight: 700;
   }
 
   .card .rating {
-    font-size: 14px;
+    font-size: 10px;
     display: flex;
     align-items: center;
     font-family: Lato;
@@ -844,32 +853,13 @@ footer {
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 700;
     font-family: lato;
   }
 
   .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(15%);
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    z-index: 1;
-    background: #2f3334;
-    padding-block: 7px;
-    padding-inline: 10px;
-    border-radius: 25px;
-    border: 1px solid #e7e3fc3b;
-  }
-
-  .arrow-left {
-    left: 3%;
-  }
-
-  .arrow-right {
-    right: 3%;
+    display: none;
   }
 
   /*Bagian container 3 4 5*/
@@ -881,7 +871,7 @@ footer {
   }
 
   .toprating-trending-rilis h2 {
-    font-size: 32px;
+    font-size: 20px;
     font-family: Lato;
     font-weight: 700;
     margin-left: 4.7%;
@@ -891,7 +881,7 @@ footer {
   .card-wrapper {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 10px;
     overflow-x: scroll;
     padding: 20px 0;
     scroll-behavior: smooth;
@@ -903,14 +893,13 @@ footer {
     gap: 32px;
     overflow-x: scroll;
     padding: 20px 0;
-    padding-bottom: 100px;
     scroll-behavior: smooth;
   }
 
   .card-dua {
     position: relative;
-    min-width: 234px;
-    height: 365px;
+    min-width: 95.6px;
+    height: 143.39px;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -926,7 +915,7 @@ footer {
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 700;
     font-family: lato;
   }
@@ -963,7 +952,7 @@ footer {
     background: #b71f1d;
     color: white;
     padding: 10px 5px;
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 400;
     font-family: Lato;
     text-align: center;
@@ -972,15 +961,15 @@ footer {
   /*Footer*/
   footer {
     background-color: #181a1c;
-    width: 1440px;
-    height: 284px;
+    width: 480px;
+    height: 193.75px;
     display: flex;
     justify-content: space-around;
-    gap: 100px;
-    margin-left: 50%;
-    margin-right: 50%;
+    gap: 10px;
     border-top: #c1c2c4 1px solid;
+    margin-top: 10px;
     color: #c1c2c4;
+    margin: 0;
   }
 
   .footer-left {
@@ -989,19 +978,19 @@ footer {
     max-width: 300px;
     justify-content: flex-start;
     margin-right: 10px;
+    margin-top: 20px;
   }
 
   .footer-logo-brand h2 {
     font-weight: 400;
-    font-size: 50px;
+    font-size: 24px;
     font-family: Londrina Solid;
     color: #ffffff;
-    margin: 0;
   }
 
   #copyright {
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
   }
 
@@ -1009,24 +998,32 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 10px;
   }
 
   .brand-logo {
-    width: 42.56px;
-    height: 36.34px;
+    width: 23.83px;
+    height: 20.65px;
   }
 
   .footer-center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-content: flex-start;
+  }
+
+  .footer-center .footer-section h3 {
+    transform: translate(-263px, 30px);
+  }
+
+  .footer-right .footer-section h3 {
+    transform: translateX(-370px);
   }
 
   .footer-right {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    align-content: flex-start;
   }
 
   .footer-section {
@@ -1038,25 +1035,10 @@ footer {
   }
 
   .genre-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    columns: 4;
+    display: none;
   }
 
   .help-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    columns: 1;
-  }
-
-  .genre-list li,
-  .help-list li {
-    margin-bottom: 15px;
-  }
-
-  .footer-small-view {
     display: none;
   }
 }
