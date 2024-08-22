@@ -890,7 +890,7 @@ footer {
   .card-wrapper-last {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 10px;
     overflow-x: scroll;
     padding: 20px 0;
     scroll-behavior: smooth;
